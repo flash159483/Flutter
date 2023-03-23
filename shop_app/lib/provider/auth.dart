@@ -32,7 +32,7 @@ class Auth with ChangeNotifier {
   Future<void> signup(
       String email, String password, String requesttoken) async {
     final url = Uri.parse(
-        'https://identitytoolkit.googleapis.com/v1/accounts:$requesttoken?key=AIzaSyDFP3ehloFiVsAfAHhGC9WdqiCjXuaRRDM');
+        '');
 
     try {
       final response = await http.post(
